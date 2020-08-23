@@ -1,9 +1,9 @@
 <template>
   <div id="lowest-rate">
-    <div class="container mt-5">
-      <div
-        class="d-flex flex-column  align-items-center justify-content-center">
+    <div class="container mt-5 animate__animated animate__fadeInTopLeft">
+      <div class="col-md-8 col-sm-12 my-border">
         <h4>Cheapest Rate</h4>
+        <hr />
         <h6>{{ symbol }} {{ lowExchange }}</h6>
       </div>
     </div>
@@ -39,4 +39,15 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+.my-border {
+  margin-left: 10px;
+  border: 1px solid green;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.5s;
+}
+.my-border:hover {
+  border: 2px solid darkgreen;
+}
+</style>

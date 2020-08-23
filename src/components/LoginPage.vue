@@ -2,7 +2,7 @@
   <div id="login" class="mt-5">
     <div class="m-5">
       <div class="col-lg-6  col-md-8 col-sm-10  centered ">
-        <h4 class="text-center ">LOGIN PAGE</h4>
+        <h4 class="text-center ">LOGIN</h4>
         <input
           type="text"
           placeholder="Username"
@@ -11,7 +11,7 @@
         />
         <input
           type="password"
-          placeholder="Passoword"
+          placeholder="Password"
           class="form-control mb-3"
           v-model="password"
         />
@@ -46,4 +46,8 @@ export default {
   }
 };
 </script>
-
+<style>
+.btn{
+  font-size:20px;
+}
+</style>

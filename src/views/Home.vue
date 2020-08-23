@@ -3,11 +3,13 @@
     <router-view v-if="isLoggedIn"></router-view>
     <Table v-if="isLoggedIn" />
     <template v-else>
+     <div class="container">
       <div class="row">
-        <div class="col-md-4"><LowestRate /></div>
-        <div class="col-md-6">
+        <div class="col-md-4 mt-5"><LowestRate /></div>
+        <div class="col-md-8">
           <LoginPage @LoginPage::isLogin="handleLoginResult" />
         </div>
+      </div>
       </div>
     </template>
   </div>

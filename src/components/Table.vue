@@ -6,7 +6,7 @@
       >
         <h4>EXCHANGE RATE</h4>
         <datatable
-          class="border table table-striped col-md-4 mt-2 text-center "
+          class="border table table-striped col-md-4 mt-2 "
           :columns="columns"
           :data="veri"
         ></datatable>
